@@ -1,5 +1,8 @@
 name: simple workflow
-on: push
+on:
+  push:
+    branch:
+      main
 
 jobs:
   say_hello:
