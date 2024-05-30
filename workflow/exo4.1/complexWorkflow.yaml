@@ -1,0 +1,12 @@
+name: complex workflow
+on:
+  push:
+env:
+  message: "Ceci est une variable d'environnement."
+
+jobs:
+  display_env:
+    runs-on: ubuntu-latest
+    steps:
+      - name: display_env
+        run: echo ${{"env.message"}}
