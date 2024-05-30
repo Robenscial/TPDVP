@@ -7,4 +7,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: confidential_data
-        run: echo le secret a pour valeur "${{secrets.SUPER_SECRET}}"
+        run: echo le secret a pour valeur "${{secrets.UPER_SECRET}}"
