@@ -6,10 +6,10 @@ jobs:
     strategy:
       matrix:
         version: ["3.8", "3.9", "3.10"]
-
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/setup_python
+      - name: version
+        uses: actions/setup-python@v3
         with:
           python-version: ${{matrix.version}}
-        run: echo python --version
+        run: python --version
