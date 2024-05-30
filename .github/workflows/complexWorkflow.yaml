@@ -9,4 +9,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: display_env
-        run: echo ${{env.message}}
+        run: echo "${{env.message}}"
