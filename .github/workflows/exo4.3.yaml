@@ -11,5 +11,5 @@ jobs:
     steps:
       - uses: actions/setup_python
         with:
-          python-version ${{matrix.version}}
+          python-version: ${{matrix.version}}
         run: echo python --version
