@@ -16,6 +16,6 @@ jobs:
         uses: docker/setup-build-action@v3
         with:
           push: true
-          tags: robens/exo-4-4:demo
+          tags: <robens>/<exo-4-4>:<demo>
 
 
