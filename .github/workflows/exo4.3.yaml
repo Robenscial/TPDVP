@@ -1,10 +1,15 @@
-name: complex workflow
+name: matrix
 on:
   push:
-
 jobs:
-  confidential_data:
+  version_python:
+    strategy:
+      matrix:
+        version: ["3.8", "3.9", "3.10"]
+
     runs-on: ubuntu-latest
     steps:
-      - name: confidential_data
-        run: echo le secret a pour valeur "${{secrets.UPER_SECRET}}"
+      - uses: actions/setup_python
+        with:
+          python ${{matrix.version}}
+        run: echo python --version
